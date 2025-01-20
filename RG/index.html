@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameAliDad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="instructions">
+            <h1>GameAliDad</h1>
+            <h3>Use the arrow keys or on-screen arrows to move. Avoid obstacles and try to get the highest score!</h3>
+            <button class="btn" id="startBtn">Start Game</button>
+        </div>
+        <div id="gameInfo" style="display: none;">
+            <p id="timer">Time: 0s</p>
+            <p id="speed">Speed: 2</p>
+            <p id="points">Points: 0</p>
+            <p id="level">Level: 1</p>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="controls" style="display: none;">
+            <button class="btn" id="playBtn">Play</button>
+            <button class="btn" id="pauseBtn">Pause</button>
+            <button class="btn" id="resetBtn">Reset</button>
+        </div>
+        <div id="arrows" style="display: none;">
+            <div class="arrow-container">
+                <button class="arrow" id="upArrow">&#8593;</button>
+            </div>
+            <div class="arrow-container side-container">
+                <button class="arrow" id="leftArrow">&#8592;</button>
+                <button class="arrow" id="rightArrow">&#8594;</button>
+            </div>
+            <div class="arrow-container">
+                <button class="arrow" id="downArrow">&#8595;</button>
+            </div>
+        </div>
+        <button class="arrow gun" id="shoot-button" style="display: none;">🔫</button>
+        <div id="soundSelectionContainer">
+            <label for="backgroundMusicSelect">Choose Music:</label>
+            <select id="backgroundMusicSelect">
+                <option value="jv.mp3">Music 1</option>
+                <option value="music2.mp3">Music 2</option>
+                <option value="music3.mp3">Music 3</option>
+            </select>
+        </div>
+    </div>
+    <audio id="backgroundMusic" src="jv.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
