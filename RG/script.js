@@ -265,7 +265,7 @@ document.getElementById('shoot-button').addEventListener('click', function() {
     setTimeout(function() {
         document.getElementById('shoot-button').disabled = false;
     }, 1000);
-    var audio = new Audio('bulletsound.mp3');
+    var audio = new Audio('bulletsoun.mp3');
     audio.play();
 });
 
