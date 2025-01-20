@@ -141,7 +141,7 @@ h1 {
     max-width: 100px;
     margin: auto;
     padding: 5px;
-    background-color: #00ff;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ffcc33);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -161,7 +161,7 @@ h1 {
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #fff;
+    background: repeating-linear-gradient(45deg, #6a11cb, #2575fc 10%);
     color: #000;
     cursor: pointer;
 }
